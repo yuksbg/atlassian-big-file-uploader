@@ -58,7 +58,7 @@ example:
 
 - Calculates block size based on file size to target roughly 10,000 MB per chunk group.
 - Ensures a minimum of 5 MB and maximum of 210 MB per chunk.
-- 
+
 ### Concurrency & Backoff
 - Spawns up to `maxSem = 8` goroutines to upload chunks in parallel.
 - Uses `cenkalti/backoff` for exponential retry on probe and upload calls.
